@@ -7,9 +7,32 @@
 <script src="https://cdn.tailwindcss.com"></script>
     <title>Digital Tasbeeh</title>
 </head>
-<body>
-    
-    
+<body class="container mx-auto my-6">
+    <h1 class="text-green-600 font-serif text-5xl md:text-6xl lg:text-7xl text-center font-semibold lg:font-extrabold">
+        DIGITAL TASBEEH
+    </h1>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-6 space-y-3">
+        <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold">Subhan Allah</h2>
+            <p class="text-3xl font-semibold" id="Subhan-display">0</p>
+            <button class="btn bg-green-600 text-white p-4 font-medium rounded-xl" id="Subhan-increment">INCREMENT</button> <button class="btn bg-red-600 text-white p-4 font-medium rounded-xl" id="Subhan-decrement">DECREMENT</button>
+        </div>
+        <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold"> Alhamdulillah</h2>
+            <p class="text-3xl font-semibold" id="Alhamdulillah-display">0</p>
+            <button class="btn bg-green-600 text-white p-4 font-medium rounded-xl" id="Alhamdulillah-increment">INCREMENT</button> <button class="btn bg-red-600 text-white p-4 font-medium rounded-xl" id="Alhamdulillah-decrement">DECREMENT</button>
+        </div>
+        <div class="space-y-4 text-center">
+            <h2 class="text-3xl font-semibold">Allahuakbar</h2>
+            <p class="text-3xl font-semibold" id="Allahuakbar-display">0</p>
+            <button class="btn bg-green-600 text-white p-4 font-medium rounded-xl" id="Allahuakbar-increment">INCREMENT</button> <button class="btn bg-red-600 text-white p-4 font-medium rounded-xl" id="Allahuakbar-decrement">DECREMENT</button>
+        </div>
+    </section>
+    <div class="flex justify-center">
+        <button class="btn bg-yellow-500" id="reset-btn">Reset Button</button>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
